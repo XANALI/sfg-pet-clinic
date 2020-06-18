@@ -1,11 +1,11 @@
 package kz.xan.sfgpetclinic.service.map;
 
 import kz.xan.sfgpetclinic.model.Vet;
-import kz.xan.sfgpetclinic.service.CrudService;
+import kz.xan.sfgpetclinic.service.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Vet findById(Long id) {
