@@ -13,4 +13,11 @@ public class IndexController {
 
         return "index";
     }
+
+    @RequestMapping({"/oups", "/oups.html"})
+    public String findOwners(){
+
+        return "notimplemented";
+    }
+
 }
