@@ -1,10 +1,10 @@
-package kz.xan.sfgpetclinic.service.map;
+package kz.xan.sfgpetclinic.services.map;
 
 import kz.xan.sfgpetclinic.model.Owner;
 import kz.xan.sfgpetclinic.model.Pet;
-import kz.xan.sfgpetclinic.service.OwnerService;
-import kz.xan.sfgpetclinic.service.PetService;
-import kz.xan.sfgpetclinic.service.PetTypeService;
+import kz.xan.sfgpetclinic.services.OwnerService;
+import kz.xan.sfgpetclinic.services.PetService;
+import kz.xan.sfgpetclinic.services.PetTypeService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;

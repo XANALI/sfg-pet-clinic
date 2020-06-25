@@ -1,10 +1,10 @@
 package kz.xan.sfgpetclinic.bootstrap;
 
 import kz.xan.sfgpetclinic.model.*;
-import kz.xan.sfgpetclinic.service.OwnerService;
-import kz.xan.sfgpetclinic.service.PetTypeService;
-import kz.xan.sfgpetclinic.service.SpecialityService;
-import kz.xan.sfgpetclinic.service.VetService;
+import kz.xan.sfgpetclinic.services.OwnerService;
+import kz.xan.sfgpetclinic.services.PetTypeService;
+import kz.xan.sfgpetclinic.services.SpecialityService;
+import kz.xan.sfgpetclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

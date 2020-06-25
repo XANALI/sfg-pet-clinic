@@ -1,4 +1,4 @@
-package kz.xan.sfgpetclinic.service.map;
+package kz.xan.sfgpetclinic.services.map;
 
 import kz.xan.sfgpetclinic.model.BaseEntity;
 

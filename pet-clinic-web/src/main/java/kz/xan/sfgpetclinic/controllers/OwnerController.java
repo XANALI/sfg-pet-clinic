@@ -1,6 +1,6 @@
 package kz.xan.sfgpetclinic.controllers;
 
-import kz.xan.sfgpetclinic.service.OwnerService;
+import kz.xan.sfgpetclinic.services.OwnerService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

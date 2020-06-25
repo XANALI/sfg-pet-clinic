@@ -1,9 +1,9 @@
-package kz.xan.sfgpetclinic.service.map;
+package kz.xan.sfgpetclinic.services.map;
 
 import kz.xan.sfgpetclinic.model.Speciality;
 import kz.xan.sfgpetclinic.model.Vet;
-import kz.xan.sfgpetclinic.service.SpecialityService;
-import kz.xan.sfgpetclinic.service.VetService;
+import kz.xan.sfgpetclinic.services.SpecialityService;
+import kz.xan.sfgpetclinic.services.VetService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;

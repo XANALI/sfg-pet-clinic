@@ -1,4 +1,4 @@
-package kz.xan.sfgpetclinic.service;
+package kz.xan.sfgpetclinic.services;
 
 import kz.xan.sfgpetclinic.model.Speciality;
 
