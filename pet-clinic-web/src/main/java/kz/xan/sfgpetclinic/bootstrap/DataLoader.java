@@ -1,10 +1,7 @@
 package kz.xan.sfgpetclinic.bootstrap;
 
 import kz.xan.sfgpetclinic.model.*;
-import kz.xan.sfgpetclinic.services.OwnerService;
-import kz.xan.sfgpetclinic.services.PetTypeService;
-import kz.xan.sfgpetclinic.services.SpecialityService;
-import kz.xan.sfgpetclinic.services.VetService;
+import kz.xan.sfgpetclinic.services.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -17,12 +14,14 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialityService specialityService;
+    private final VisitService visitService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialityService specialityService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialityService specialityService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialityService = specialityService;
+        this.visitService = visitService;
     }
 
     @Override
@@ -64,6 +63,13 @@ public class DataLoader implements CommandLineRunner {
         owner1.getPets().add(mikesPet);
 
         ownerService.save(owner1);
+
+        Visit dogVisit = new Visit();
+        dogVisit.setPet(mikesPet);
+        dogVisit.setDate(LocalDate.now());
+        dogVisit.setDescription("Cool Dog");
+
+        visitService.save(dogVisit);
 
         Speciality radiology = new Speciality();
         radiology.setDescription("Radiology");
